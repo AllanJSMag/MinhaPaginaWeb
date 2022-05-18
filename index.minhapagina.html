@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.minhapagina.css">
+    <title>_Allan.Magalhaes_</title>
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <img src="./imagens/logo.Allan.png"logo Allan">
+        </div>
+        <ul class="links">
+            <img src="./imagens/GH.png" alt="">
+            <li><a href="https://github.com/AllanJSMag" target="_blank">GitHub</a></li>
+            <img src="./imagens/linkedin_logo_icon_189225.png" alt="">
+            <li><a href="https://www.linkedin.com/in/allan-magalh%C3%A3es/" target="blank">LinkedIn</a></li>
+            <img src="./imagens/GmailLogo.png" alt="">
+            <li><a href="mailto:allanjomagsm@gmail.com" target="blank">Email</a></li>
+        </ul>
+
+    </header>
+
+    <main>
+        <section class="container">
+            <div class="name">
+                <h1>Allan</h1>
+                <h2>Magalhães</h2>
+            </div>
+            <div class="descrição">
+                <h4>Jr. Software Developer</h4>
+            </div>
+            <div onclick="displayAbout()" id="arrow">
+                <img src="./imagens/arrow.png" alt="">
+            </div>
+
+            <div style="display: none;" id="about">
+
+                <p id="topo">Engenheiro mecânico por formação, com experiência em projetos, migrando para a área de
+                    tecnologia.
+                    Buscando uma carreira em dev full stake com o Hiring Coders #3, voltado para o mercado de
+                    e-commerce.
+                </p>
+
+                <section class="info">
+
+                    <div class="esperiencia">
+                        <h4>Esperiência proficional</h4>
+                        <div onclick="displayAbout1()" id="arrow1">
+                            <img src="./imagens/arrow.png" alt="">
+                        </div>
+                        <div style="display: none;" id="esperiencia">
+                            <h6>Atual</h6>
+                            <h5>Hiring Coders #3, VTex - Gama Academ</h5>
+                            <p> Bootcamp da VTex em parceria com Gama Academy, para formar proficionais devs capazes de
+                                atuar como Full Stack voltado para e-commerce. <br>
+                                Estou tendo a incrivel oportunidade de desenvolver e ampliar diversas abilidades em HTML
+                                5, CSS 3, JavaScript, entre outros.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="formacao">
+                        <h4>Formação acadêmica</h4>
+                        <div onclick="displayAbout2()" id="arrow2">
+                            <img src="./imagens/arrow.png" alt="">
+                        </div>
+                        <div style="display: none;" id="formacao">
+                            <h6>MARÇO DE 2015 – DEZEMBRO DE 2021</h6>
+                            <h5>BACHARELADO EM ENGENHARIA MECÂNICA, UNINASSAU</h5>
+                            <p>
+                                No decorrer do curso aprimorei minhas habilidades no desenvolvimento de projetos e
+                                conhecimentos de engenharia.
+                            </p>
+                            <br>
+                            <h6>JANEIRO 2013 – JANEIRO 2015</h6>
+                            <h5>LICENCIATURA EM FÍSICA (INCOMPLETO), UNIVERSIDADE FEDERAL DO PIAUÍ</h5>
+                            <p>
+                                Estudei quatro semestres de física na UFPI, mas interrompi o curso quando notei que
+                                gostava de trabalhar de forma mais prática e aplicada. O período foi muito importante
+                                para desenvolver minhas habilidades matemáticas.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="abilidades">
+                        <h4>Abilidades</h4>
+                        <div onclick="displayAbout3()" id="arrow3">
+                            <img src="./imagens/arrow.png" alt="">
+                        </div>
+                        <div style="display: none;" id="abilidades">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>Node JS</li>
+                        </div>
+                    </div>
+
+                    <div class="adcional">
+                        <h4>Informações adcionais</h4>
+                        <div onclick="displayAbout4()" id="arrow4">
+                            <img src="./imagens/arrow.png" alt="">
+                        </div>
+                        <div style="display: none;" id="adcional">
+                            <h6>JULHO DE 2019 – AGOSTO DE 2020</h6>
+
+                            <p>
+                                • Membro integrante da Liga Acadêmica de Engenharia de Materiais UNINASSAU (LAENGMAT);
+                            </p>
+                            <br>
+                            <h6>AGOSTO DE 2019 – DEZEMBRO DE 2019</h6>
+                            <p>• Discente monitor na disciplina Prática de Oficina (2019.2).</p>
+                            <br>
+                            <h6>MARÇO DE 2021</h6>
+                            <p> • Oficina com o tema: Administração do Tempo, através do Programa de Qualificação
+                                Gratuita do CIEE.</p>
+                        </div>
+                    </div>
+
+                </section>
+
+            </div>
+
+            <div class="form">
+                <p>Deixe seu e-mail:</p>
+                <form action="">
+                    <input type="text" placeholder="seu e-mail">
+                    <button>enviar</button>
+                </form>
+            </div>
+        </section>
+
+
+    </main>
+
+    <script>
+        function displayAbout() {
+            var arrow = document.getElementById('arrow');
+            arrow.classList.toggle('rotate');
+            var display = document.getElementById('about');
+            display.classList.toggle('active');
+        }
+        function displayAbout1() {
+            var arrow = document.getElementById('arrow1');
+            arrow.classList.toggle('rotate');
+            var display = document.getElementById('esperiencia');
+            display.classList.toggle('active');
+        }
+        function displayAbout2() {
+            var arrow = document.getElementById('arrow2');
+            arrow.classList.toggle('rotate');
+            var display = document.getElementById('formacao');
+            display.classList.toggle('active');
+        }
+        function displayAbout3() {
+            var arrow = document.getElementById('arrow3');
+            arrow.classList.toggle('rotate');
+            var display = document.getElementById('abilidades');
+            display.classList.toggle('active');
+        }
+        function displayAbout4() {
+            var arrow = document.getElementById('arrow4');
+            arrow.classList.toggle('rotate');
+            var display = document.getElementById('adcional');
+            display.classList.toggle('active');
+        }
+    </script>
+
+</body>
+
+</html>

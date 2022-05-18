@@ -1,0 +1,217 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: black;
+    font-family: 'Heebo', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+}
+
+header {
+    display: flex;
+    text-align: center;
+    padding: 10px;
+    justify-content: space-between;
+    background-color: #02256b;
+    border-bottom: 2px solid #fff;
+    box-shadow: 2px 2px 15px 2px #fff;
+    /* padding-top: 15px; */
+}
+
+img {
+    width: 20px;
+}
+
+#logo img {
+    width: 215px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+}
+
+.links li {
+    font-weight: 800;
+    display: flex;
+    align-content: center;
+    margin: 5px;
+    padding-right: 10px;
+
+}
+
+.links li a {
+    transition: 400ms;
+}
+
+.links li a:hover {
+    color: #5eb0ef;
+    border-bottom: 1px solid;
+}
+
+.container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.container .name {
+    display: flex;
+    justify-content: center;
+}
+
+.container .name h1 {
+    font-size: 65px;
+    color: #6e6b6b;
+    margin-right: 5px;
+}
+
+.container .name h2 {
+    font-size: 65px;
+    color: #393636;
+    margin-left: 5px;
+}
+
+.container .descrição h4 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-top: -10px;
+    color: #504d4d;
+}
+
+#arrow,
+#arrow1,
+#arrow2,
+#arrow3,
+#arrow4{
+    padding-top: 15px;
+    max-width: 30px;
+   margin: 0 auto;
+    transition: 300ms;
+}
+
+#arrow img,
+#arrow1 img,
+#arrow2 img,
+#arrow3 img,
+#arrow4 img {
+    cursor: pointer;
+    animation: blink 1s steps(3, start) infinite;
+}
+
+@keyframes blink {
+    to {
+        visibility: hidden;
+    }
+}
+
+.rotate {
+    transform: rotate(180deg);
+    transition: 350ms;
+}
+
+.active {
+    display: block !important;
+}
+
+#about {
+    background-color: #d7d2d2;
+}
+
+#about #topo {
+    font-weight: bold;
+    width: 60%;
+}
+
+#about p {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 15px 0px;
+}
+
+#about h4 {
+    color: #a00202;
+    padding: 5px 0px;
+}
+
+.info {
+    padding: 20px 0;
+}
+
+.info #arrow {
+    padding: 0;
+}
+
+.info p {
+    max-width: 450px;
+}
+
+#esperiencia,
+#formacao,
+#abilidades,
+#adcional {
+    list-style: none;
+    width: 40%;
+    background-color: white;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    box-shadow: 2px 5px 5px #504d4d;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+#abilidades li {
+    font-weight: 500;
+}
+
+.info h5 {
+    color: #02256b;
+}
+
+.info h6 {
+    color: #504d4d;
+}
+
+.form {
+    width: 40%;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.form p {
+    font-size: 15px;
+}
+
+.form input {
+    width: 50%;
+    padding: 5px 10px;
+    margin: 0 auto;
+    background-color: #e0dcdc;
+    border: none;
+    border-radius: 8px 0px 0px 8px;
+}
+
+.form button {
+    width: 15%;
+    padding: 5px 10px;
+    border: none;
+    background-color: black;
+    color: white;
+    margin: 0 auto 10px;
+    cursor: pointer;
+    transition: 400ms;
+    border-radius: 0px 8px 8px 0px;
+    margin-left: -5px;
+    font-weight: 500;
+}
+
+.form button:hover {
+    background-color: rgb(1, 14, 94);
+    color: #5eb0ef;
+}
