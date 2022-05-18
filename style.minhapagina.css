@@ -20,7 +20,7 @@ header {
     background-color: #02256b;
     border-bottom: 2px solid #fff;
     box-shadow: 2px 2px 15px 2px #fff;
-    /* padding-top: 15px; */
+    background-size: 100%;
 }
 
 img {
@@ -89,10 +89,10 @@ img {
 #arrow1,
 #arrow2,
 #arrow3,
-#arrow4{
+#arrow4 {
     padding-top: 15px;
     max-width: 30px;
-   margin: 0 auto;
+    margin: 0 auto;
     transition: 300ms;
 }
 
@@ -166,8 +166,16 @@ img {
     padding: 10px;
 }
 
+#esperiencia p,
+#formacao p,
+#abilidades p,
+#adcional p {
+    text-align: justify;
+}
+
 #abilidades li {
     font-weight: 500;
+    text-align: center;
 }
 
 .info h5 {
@@ -214,4 +222,58 @@ img {
 .form button:hover {
     background-color: rgb(1, 14, 94);
     color: #5eb0ef;
+}
+
+@media only screen and (max-width: 880px) {
+
+    .form {
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+    img {
+        width: 20px;
+    }
+
+    #logo img {
+        width: 120px;
+    }
+
+    .links li {
+        font-size: 8px;
+        padding: 0;
+    }
+
+    .container .name h1 {
+        font-size: 30px;
+    }
+
+    .container .name h2 {
+        font-size: 30px;
+    }
+
+    .container .descrição h4 {
+        font-size: 15px;
+    }
+
+    #about #topo {
+        width: 90%;
+        text-align: justify;
+    }
+
+    #esperiencia,
+    #formacao,
+    #abilidades,
+    #adcional {
+        width: 85%;
+    }
+
+    #esperiencia p,
+    #formacao p,
+    #abilidades p,
+    #adcional p {
+        text-align: justify;
+    }
 }
